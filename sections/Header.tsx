@@ -16,7 +16,7 @@ export default function Header({
   },
 }: Nav) {
   return (
-    <nav class="absolute top-0 left-0 bg-transparent py-12 px-8 z-20">
+    <nav class="absolute top-0 left-0 pl-8 bg-transparent  z-20">
       {/* main content */}
       <div class="">
         <a href="/">
