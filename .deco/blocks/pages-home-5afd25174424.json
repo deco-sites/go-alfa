@@ -7,7 +7,7 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p><span style=\"color: #ffffff; font-size: 44pt\">Transforme sua presença online em algo extraordinário!</span></p>",
+      "title": "Transforme sua presença online em algo extraordinário!",
       "cta": [
         {
           "href": "/",
@@ -61,17 +61,10 @@
       }
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "arrows": true
-    },
-    {
-      "__resolveType": "site/sections/Faq.tsx"
-    },
-    {
-      "__resolveType": "Footer"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
