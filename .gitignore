@@ -66,6 +66,10 @@ yarn-error.log
 dist/
 server/
 
+#env
+.env
+.env.local
+
 import_map.local.json
 deno.lock
 
