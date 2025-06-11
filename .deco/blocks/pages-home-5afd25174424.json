@@ -21,14 +21,44 @@
       "size": "cover"
     },
     {
-      "__resolveType": "site/sections/Logos.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/About.tsx",
+        "imageWithParagraph": [
+          {
+            "titlePlacement": "left",
+            "descriptionPlacement": "left",
+            "placement": "right",
+            "cta": [],
+            "ctaPlacement": "left",
+            "title": "Obtenha soluções personalizadas e inovadoras para impulsionar a sua marca",
+            "tagline": "teste 2",
+            "image": "https://assets.decocache.com/go-alfa/3b195322-e8bc-45aa-ac9e-347b309b717e/network.jpg",
+            "description": "Conte com uma equipe de profissionais altamente qualificados que irá colaborar de perto com você para entender suas metas, necessidades e identidade. Criaremos uma experiência única, que capture a essência da sua empresa e transmita a mensagem certa."
+          },
+          {
+            "titlePlacement": "left",
+            "descriptionPlacement": "left",
+            "placement": "left",
+            "cta": [],
+            "ctaPlacement": "left",
+            "title": "Valores que nos diferenciam",
+            "description": "Atendimento - Atendimento próximo durante todo o projeto e acompanhamento;\nPersonalização - Customizamos o seu comércio digital de acordo com as suas necessidades;\nPerformance - Desempenho e segurança são fundamentais para o sucesso do seu negócio.",
+            "image": "https://assets.decocache.com/go-alfa/fa081eeb-7969-4c28-b325-9269b7637b05/valores-alfa.jpg"
+          },
+          {
+            "titlePlacement": "left",
+            "descriptionPlacement": "left",
+            "placement": "right",
+            "cta": [],
+            "ctaPlacement": "left",
+            "image": "https://assets.decocache.com/go-alfa/05c9c313-ba0d-4895-9d53-579477c7cd1f/servicos.jpg",
+            "title": "Conheça nossos serviços",
+            "description": "Fundada por profissionais com mais de 15 anos atuantes no mercado digital, em projetos de alta escala e relevância, a Allfa é especialista em implementações de ecossistemas digitais B2B (Empresa para Empresa), B2C (Empresa para Consumidor) e Marketplaces. Com foco em User Experience (UX) e na personalidade de cada negócio criamos ecossistemas digitais personalizados e inovadores."
+          }
+        ],
+        "title": "Sobre nós 2"
+      }
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx"

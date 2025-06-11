@@ -2930,6 +2930,9 @@ html {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
 .pb-\[15px\] {
   padding-bottom: 15px;
 }
@@ -2944,9 +2947,6 @@ html {
 }
 .pr-4 {
   padding-right: 1rem;
-}
-.pt-12 {
-  padding-top: 3rem;
 }
 .pt-16 {
   padding-top: 4rem;
@@ -3293,14 +3293,19 @@ html {
     flex-direction: row-reverse;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:gap-14 {
+    gap: 3.5rem;
   }
 
   .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:text-base {
@@ -3389,14 +3394,6 @@ html {
 
   .lg\:pb-16 {
     padding-bottom: 4rem;
-  }
-
-  .lg\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
-  .lg\:pt-28 {
-    padding-top: 7rem;
   }
 
   .lg\:text-\[80px\] {
