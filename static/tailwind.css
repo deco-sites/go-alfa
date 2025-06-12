@@ -2390,6 +2390,9 @@ html {
 .h-\[250px\] {
   height: 250px;
 }
+.h-\[80px\] {
+  height: 80px;
+}
 .h-\[820px\] {
   height: 820px;
 }
@@ -2441,6 +2444,9 @@ html {
 }
 .w-\[316px\] {
   width: 316px;
+}
+.w-\[320px\] {
+  width: 320px;
 }
 .w-\[330px\] {
   width: 330px;
@@ -2580,6 +2586,9 @@ html {
 }
 .animate-sliding {
   animation: sliding 30s linear infinite;
+}
+.cursor-default {
+  cursor: default;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -2817,6 +2826,10 @@ html {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
 }
 .bg-secondary {
   --tw-bg-opacity: 1;
@@ -3392,6 +3405,10 @@ html {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-20 {
