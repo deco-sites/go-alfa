@@ -63,6 +63,26 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Solutions.tsx",
+        "solutions": [
+          {
+            "title": "Lojas virtuais",
+            "description": "Implemente sua loja com profissionais capacitados"
+          },
+          {
+            "title": "Evolução",
+            "description": "Promova melhorias para a experiência dos seus clientes seja a mais completa"
+          },
+          {
+            "title": "Headless",
+            "description": "Desenvolva soluções sobre a mais recente tecnologia disponível no mercado"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "Footer"
       }
     }
