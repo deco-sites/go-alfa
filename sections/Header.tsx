@@ -16,9 +16,9 @@ export default function Header({
   },
 }: Nav) {
   return (
-    <nav class="absolute top-0 left-0 pl-8 bg-transparent  z-20">
+    <nav class="absolute top-12 left-12 bg-transparent  z-20">
       {/* main content */}
-      <div class="">
+      <div>
         <a href="/">
           <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
         </a>
