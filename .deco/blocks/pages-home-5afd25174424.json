@@ -10,9 +10,9 @@
       "title": "Transforme sua presença online em algo extraordinário!",
       "cta": [
         {
-          "href": "/",
           "text": "Entre em contato",
-          "outline": false
+          "outline": false,
+          "href": "#contact"
         }
       ],
       "description": "Ter um site profissional é essencial para alcançar o sucesso do seu negócio! Mas podemos levar seu site para o próximo nível.",
@@ -366,7 +366,7 @@
                 "href": "https://www.shopify.com/br"
               }
             ],
-            "title": "<p><span style=\"color: #000000; font-size: 32pt\">Especializações</span></p>",
+            "title": "<p><span style=\"color: rgb(0, 0, 0); font-size: 28pt\">Especializações</span></p>",
             "width": 300,
             "height": 100
           },
@@ -391,6 +391,44 @@
               }
             ],
             "width": 160
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Contact.tsx",
+        "title": "Contato",
+        "description": "Nossos clientes são importantes para nós. Ficaríamos contentes em receber o seu contato durante nosso horário comercial.",
+        "email": "comercial@go-allfa.com",
+        "placement": "left",
+        "image": "https://assets.decocache.com/go-alfa/927bd8d3-31e6-4a8e-9dd6-cba27ab4adb2/contact.jpg",
+        "whatsapp": {
+          "text": "Envie sua mensagem",
+          "href": "https://wa.me/5521981026507"
+        },
+        "daysOfWeek": [
+          {
+            "dayOfWeek": "Segunda-feira"
+          },
+          {
+            "dayOfWeek": "Terça-feira"
+          },
+          {
+            "dayOfWeek": "Quarta-feira"
+          },
+          {
+            "dayOfWeek": "Quinta-feira"
+          },
+          {
+            "dayOfWeek": "Sexta-feira"
+          },
+          {
+            "dayOfWeek": "Sábado"
+          },
+          {
+            "dayOfWeek": "Domingo"
           }
         ]
       }
