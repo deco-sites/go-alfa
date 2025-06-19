@@ -14,16 +14,17 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "Transforme sua presença online em algo extraordinário!",
+      "title": "Inove seu e-commerce Movimente resultados reais.",
       "cta": [
         {
-          "text": "Entre em contato",
+          "text": "Fale com um especialista",
           "outline": false,
-          "href": "#contact"
+          "href": "#contact",
+          "icon": "WhatsApp"
         }
       ],
-      "description": "Ter um site profissional é essencial para alcançar o sucesso do seu negócio! Mas podemos levar seu site para o próximo nível.",
-      "image": "https://assets.decocache.com/go-alfa/6023045e-938e-41ba-9b66-84ab7b0e201a/Allfa-Banner-38c5a86.webp",
+      "description": "Nossa expertise em tecnologia e estratégia transforma seu negócio digital, impulsionando crescimento, engajamento e sucesso sustentável.",
+      "image": "https://assets.decocache.com/go-alfa/40e2abd5-0853-44ea-a107-91a8f8a30c04/banner.png",
       "placement": "center",
       "size": "cover"
     },
@@ -65,12 +66,6 @@
           }
         ],
         "title": "Sobre nós"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Teste.tsx"
       }
     },
     {

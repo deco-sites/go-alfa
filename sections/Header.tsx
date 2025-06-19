@@ -16,11 +16,11 @@ export default function Header({
   },
 }: Nav) {
   return (
-    <nav class="absolute top-12 left-12 bg-transparent  z-20">
+    <nav class="absolute top-12 left-2 md:left-12 bg-transparent  z-20">
       {/* main content */}
       <div>
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <Image src={logo.src || ""} width={168} height={46} alt={logo.alt} />
         </a>
       </div>
     </nav>
