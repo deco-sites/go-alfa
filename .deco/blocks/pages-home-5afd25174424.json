@@ -58,18 +58,39 @@
         "__resolveType": "site/sections/Solutions.tsx",
         "solutions": [
           {
-            "title": "Lojas virtuais",
-            "description": "Implemente sua loja com profissionais capacitados"
+            "icon": "shoppingBasket",
+            "description": "Lojas escaláveis e seguras, adaptadas ao seu negócio.",
+            "title": "E-commerce sob medida"
           },
           {
-            "title": "Evolução",
-            "description": "Promova melhorias para a experiência dos seus clientes seja a mais completa"
+            "icon": "LayoutDashboard",
+            "title": "UX & UI Design",
+            "description": "Interfaces focadas em experiência do usuário e conversão."
           },
           {
-            "title": "Headless",
-            "description": "Desenvolva soluções sobre a mais recente tecnologia disponível no mercado"
+            "icon": "Code",
+            "title": "Arquitetura e Desenvolvimento",
+            "description": "Soluções sólidas em front-end e full-stack."
+          },
+          {
+            "title": "SEO & Performance",
+            "description": "Visibilidade, velocidade e destaque nos mecanismos de busca.",
+            "icon": "chartNoAxesColumnIncreasing"
+          },
+          {
+            "title": "CRO & Testes A/B",
+            "description": "Otimização contínua baseada em dados reais.",
+            "icon": "split"
+          },
+          {
+            "title": "Evolução de Produto",
+            "description": "Melhorias recorrentes e estratégicas.",
+            "icon": "refreshCw"
           }
-        ]
+        ],
+        "title": "Soluções",
+        "subtitle": "Soluções completas para a evolução do seu negócio digital",
+        "description": "A ALLFA oferece um ecossistema completo de serviços para e-commerces e produtos digitais. Atuamos desde a concepção até a otimização contínua da sua plataforma, com foco em inovação, performance e resultados."
       }
     },
     {

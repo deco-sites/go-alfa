@@ -1,10 +1,11 @@
 export interface Props {
     title?: string;
     subtitle?: string;
+    description?: string;
     className?: string;
 }
 
-const TitleSection = ({ title, subtitle, className }: Props) => {
+const TitleSection = ({ title, subtitle, description, className }: Props) => {
     return (
         <div
             class={"flex flex-col justify-center items-center py-8 md:py-20 gap-4 px-4 "}
@@ -21,6 +22,9 @@ const TitleSection = ({ title, subtitle, className }: Props) => {
             >
                 {subtitle}
             </h3>
+            <p class={"text-center text-primary/50 font-light"}>
+                {description}
+            </p>
         </div>
     );
 };

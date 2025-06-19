@@ -2320,6 +2320,10 @@ html {
 .float-right {
   float: right;
 }
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2409,9 +2413,6 @@ html {
 .h-\[210px\] {
   height: 210px;
 }
-.h-\[250px\] {
-  height: 250px;
-}
 .h-\[80px\] {
   height: 80px;
 }
@@ -2444,6 +2445,9 @@ html {
 }
 .min-h-\[157px\] {
   min-height: 157px;
+}
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 .min-h-\[292px\] {
   min-height: 292px;
@@ -2830,12 +2834,6 @@ html {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-b-\[1px\] {
-  border-bottom-width: 1px;
-}
-.border-r-0 {
-  border-right-width: 0px;
-}
 .border-t {
   border-top-width: 1px;
 }
@@ -2847,15 +2845,15 @@ html {
   --tw-border-opacity: 1;
   border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
 }
-.border-primary\/10 {
-  border-color: var(--fallback-p,oklch(var(--p)/0.1));
-}
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity)));
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-white\/5 {
+  border-color: rgb(255 255 255 / 0.05);
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -2894,6 +2892,9 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -3198,6 +3199,9 @@ html {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
 }
+.text-primary\/50 {
+  color: var(--fallback-p,oklch(var(--p)/0.5));
+}
 .text-secondary {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
@@ -3405,6 +3409,12 @@ html {
   --tw-content: "";
   content: var(--tw-content);
 }
+.hover\:border-white\/15:hover {
+  border-color: rgb(255 255 255 / 0.15);
+}
+.hover\:bg-white\/10:hover {
+  background-color: rgb(255 255 255 / 0.1);
+}
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
@@ -3451,6 +3461,11 @@ html {
 
   .md\:left-12 {
     left: 3rem;
+  }
+
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .md\:max-h-\[300px\] {
@@ -3514,6 +3529,10 @@ html {
 
   .md\:bg-top {
     background-position: top;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:px-4 {
@@ -3608,14 +3627,6 @@ html {
 
   .lg\:gap-20 {
     gap: 5rem;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
-  }
-
-  .lg\:border-r-\[1px\] {
-    border-right-width: 1px;
   }
 
   .lg\:px-16 {
