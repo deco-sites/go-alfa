@@ -3,7 +3,14 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "site/sections/Header.tsx",
+      "navigation": {
+        "links": [],
+        "buttons": []
+      },
+      "logo": {
+        "src": "https://assets.decocache.com/go-alfa/93fe7fdf-7c77-42b2-9c34-4a9b9b68adbc/Captura-de-tela-2025-06-13-195800.png"
+      }
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
@@ -58,6 +65,12 @@
           }
         ],
         "title": "Sobre nós"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Teste.tsx"
       }
     },
     {
