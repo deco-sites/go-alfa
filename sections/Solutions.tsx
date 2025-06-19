@@ -1,5 +1,5 @@
 import TitleSection from "site/sections/TitleSection.tsx";
-import CustomIcon from "../islands/lucide-icon.tsx";
+import CustomIcon from "../components/ui/lucide-icon.tsx";
 
 export interface Solution {
     title: string;
