@@ -11,19 +11,18 @@ import * as $$$$$$2 from "./sections/Contact.tsx";
 import * as $$$$$$3 from "./sections/Faq.tsx";
 import * as $$$$$$4 from "./sections/Footer.tsx";
 import * as $$$$$$5 from "./sections/Header.tsx";
-import * as $$$$$$16 from "./sections/hero-1.tsx";
-import * as $$$$$$17 from "./sections/hero-2.tsx";
+import * as $$$$$$15 from "./sections/hero-1.tsx";
+import * as $$$$$$16 from "./sections/hero-2.tsx";
 import * as $$$$$$6 from "./sections/Hero.tsx";
-import * as $$$$$$18 from "./sections/hero2.tsx";
+import * as $$$$$$17 from "./sections/hero2.tsx";
 import * as $$$$$$7 from "./sections/ImageWithParagraph.tsx";
 import * as $$$$$$8 from "./sections/Logos.tsx";
 import * as $$$$$$9 from "./sections/LogosRowSection.tsx";
 import * as $$$$$$10 from "./sections/Solutions.tsx";
 import * as $$$$$$11 from "./sections/Specializations.tsx";
-import * as $$$$$$12 from "./sections/Teste.tsx";
-import * as $$$$$$13 from "./sections/Testimonials.tsx";
-import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$15 from "./sections/TitleSection.tsx";
+import * as $$$$$$12 from "./sections/Testimonials.tsx";
+import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$14 from "./sections/TitleSection.tsx";
 
 const manifest = {
   "sections": {
@@ -33,19 +32,18 @@ const manifest = {
     "site/sections/Faq.tsx": $$$$$$3,
     "site/sections/Footer.tsx": $$$$$$4,
     "site/sections/Header.tsx": $$$$$$5,
-    "site/sections/hero-1.tsx": $$$$$$16,
-    "site/sections/hero-2.tsx": $$$$$$17,
+    "site/sections/hero-1.tsx": $$$$$$15,
+    "site/sections/hero-2.tsx": $$$$$$16,
     "site/sections/Hero.tsx": $$$$$$6,
-    "site/sections/hero2.tsx": $$$$$$18,
+    "site/sections/hero2.tsx": $$$$$$17,
     "site/sections/ImageWithParagraph.tsx": $$$$$$7,
     "site/sections/Logos.tsx": $$$$$$8,
     "site/sections/LogosRowSection.tsx": $$$$$$9,
     "site/sections/Solutions.tsx": $$$$$$10,
     "site/sections/Specializations.tsx": $$$$$$11,
-    "site/sections/Teste.tsx": $$$$$$12,
-    "site/sections/Testimonials.tsx": $$$$$$13,
-    "site/sections/Theme/Theme.tsx": $$$$$$14,
-    "site/sections/TitleSection.tsx": $$$$$$15,
+    "site/sections/Testimonials.tsx": $$$$$$12,
+    "site/sections/Theme/Theme.tsx": $$$$$$13,
+    "site/sections/TitleSection.tsx": $$$$$$14,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

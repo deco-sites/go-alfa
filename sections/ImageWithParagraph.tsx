@@ -9,18 +9,18 @@ export interface CTA {
 }
 
 export interface ImageWithParagraphProps {
-  title?: string;
-  titlePlacement?: "left" | "right" | "center";
-  /** @format textarea */
+  /** Add commentMore actions
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+   */
   description?: string;
+  /**
+   * @default This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.
+   */
   descriptionPlacement?: "left" | "right" | "center" | "justify";
   image?: ImageWidget;
   placement?: "left" | "right";
   cta?: CTA[];
-  disableSpacing?: {
-    top?: boolean;
-    bottom?: boolean;
-  };
   ctaPlacement?: "left" | "right" | "center";
 }
 
@@ -39,14 +39,11 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 export default function ImageWithParagraph({
-  title = "Here's an intermediate size heading you can edit",
-  titlePlacement = "left",
   description =
     "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
   descriptionPlacement = "left",
   image = DEFAULT_IMAGE,
   placement = "left",
-  disableSpacing,
   cta = [
     { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
     { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
@@ -54,15 +51,11 @@ export default function ImageWithParagraph({
   ctaPlacement = "left",
 }: ImageWithParagraphProps) {
   return (
-    <div class="lg:container md:max-w-7xl lg:mx-auto mx-4 text-sm ">
+    <div class="lg:container md:max-w-7xl lg:mx-auto mx-4 text-sm  ">
       <div
-        class={`flex ${
-          PLACEMENT[placement]
-        } gap-12 md:gap-14 text-left items-center z-10 ${
-          disableSpacing?.top ? "" : "pt-4"
-        } ${disableSpacing?.bottom ? "" : "pb-6"}`}
+        class={`flex ${PLACEMENT[placement]} gap-12 md:gap-14 text-left  z-10`}
       >
-        <div class="w-full md:w-1/2  overflow-hidden">
+        <div class="w-full md:w-1/2 h-full ">
           <Image
             width={800}
             class="object-cover z-10 "
@@ -73,22 +66,17 @@ export default function ImageWithParagraph({
             loading="lazy"
           />
         </div>
-        <div class="w-full md:w-1/2 space-y-2 md:space-y-4 md:max-w-xl gap-4 z-10">
-          <p
-            class="text-2xl text-primary leading-snug"
-            style={`text-align:${titlePlacement}`}
-          >
-            {title}
-          </p>
-          <p
-            class="leading-normal"
+        <div class="w-full md:w-1/2 flex flex-col justify-between md:space-y-4 md:max-w-xl  z-10">
+          <div
             style={`text-align:${descriptionPlacement}`}
-          >
-            {description}
-          </p>
+            class="inline-block font-light"
+            dangerouslySetInnerHTML={{
+              __html: description,
+            }}
+          />
           {cta && (
             <div
-              class={`flex gap-3 pt-4 justify-${CTA_PLACEMENT[ctaPlacement]}`}
+              class={`flex gap-3 pt-4  justify-${CTA_PLACEMENT[ctaPlacement]}`}
             >
               {cta.map((item) => (
                 <a

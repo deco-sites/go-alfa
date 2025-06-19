@@ -29,14 +29,6 @@
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
     "fonts": [
       {
-        "variations": [],
-        "family": "Roboto"
-      },
-      {
-        "variations": [],
-        "family": "Poppins"
-      },
-      {
         "variations": [
           {
             "weight": "100"
@@ -46,6 +38,9 @@
           },
           {
             "weight": "300"
+          },
+          {
+            "weight": "500"
           }
         ],
         "family": "Roboto Condensed"

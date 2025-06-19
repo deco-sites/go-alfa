@@ -36,36 +36,20 @@
           {
             "titlePlacement": "left",
             "descriptionPlacement": "left",
-            "placement": "right",
-            "cta": [],
-            "ctaPlacement": "left",
-            "title": "Obtenha soluções personalizadas e inovadoras para impulsionar a sua marca",
-            "tagline": "teste 2",
-            "image": "https://assets.decocache.com/go-alfa/3b195322-e8bc-45aa-ac9e-347b309b717e/network.jpg",
-            "description": "Conte com uma equipe de profissionais altamente qualificados que irá colaborar de perto com você para entender suas metas, necessidades e identidade. Criaremos uma experiência única, que capture a essência da sua empresa e transmita a mensagem certa."
-          },
-          {
-            "titlePlacement": "left",
-            "descriptionPlacement": "left",
             "placement": "left",
             "cta": [],
             "ctaPlacement": "left",
-            "title": "Valores que nos diferenciam",
-            "description": "Atendimento - Atendimento próximo durante todo o projeto e acompanhamento;\nPersonalização - Customizamos o seu comércio digital de acordo com as suas necessidades;\nPerformance - Desempenho e segurança são fundamentais para o sucesso do seu negócio.",
-            "image": "https://assets.decocache.com/go-alfa/fa081eeb-7969-4c28-b325-9269b7637b05/valores-alfa.jpg"
-          },
-          {
-            "titlePlacement": "left",
-            "descriptionPlacement": "left",
-            "placement": "right",
-            "cta": [],
-            "ctaPlacement": "left",
-            "image": "https://assets.decocache.com/go-alfa/05c9c313-ba0d-4895-9d53-579477c7cd1f/servicos.jpg",
-            "title": "Conheça nossos serviços",
-            "description": "Fundada por profissionais com mais de 15 anos atuantes no mercado digital, em projetos de alta escala e relevância, a Allfa é especialista em implementações de ecossistemas digitais B2B (Empresa para Empresa), B2C (Empresa para Consumidor) e Marketplaces. Com foco em User Experience (UX) e na personalidade de cada negócio criamos ecossistemas digitais personalizados e inovadores."
+            "tagline": "teste 2",
+            "image": "https://assets.decocache.com/go-alfa/fd3ec99f-f4b9-4e4e-adb8-deb190955ee9/image-allfa.png",
+            "description": "<p><span style=\"font-size: 12pt\">Na </span><strong><span style=\"color: #3d98d1; font-size: 12pt\">ALLFA</span></strong><span style=\"font-size: 12pt\">, somos movidos por um propósito: criar soluções digitais que realmente mexem com os ponteiros do seu negócio. Atuamos na construção e evolução de produtos digitais, com foco especial em e-commerces, combinando estratégia, design, tecnologia e performance.<br>Somos uma equipe multidisciplinar apaixonada por resolver problemas complexos por meio da tecnologia. Trabalhamos com uma abordagem ágil e personalizada, buscando constantemente inovação e entrega de valor real para nossos clientes.</span><br><br><span style=\"color: #ffffff; font-size: 14pt\">Nossa atuação envolve:</span></p><p><br></p><ul><li><p><strong>Entendimento profundo do seu negócio</strong></p></li><li><p><strong>Planejamento estratégico digital</strong></p></li><li><p><strong>Design centrado no usuário (UX/UI)</strong></p></li><li><p><strong>Desenvolvimento sob medida</strong></p></li><li><p><strong>Otimização contínua</strong></p></li></ul>",
+            "disableSpacing": {
+              "top": true,
+              "bottom": true
+            }
           }
         ],
-        "title": "Sobre nós"
+        "title": "Sobre nós",
+        "subtitle": "Especialistas em inovação digital com foco em resultados"
       }
     },
     {
