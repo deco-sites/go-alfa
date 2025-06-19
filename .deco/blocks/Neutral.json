@@ -15,11 +15,11 @@
     "--tab-radius": "0.5rem"
   },
   "mainColors": {
-    "base-100": "#000000",
+    "base-100": "#0E0F14",
     "primary": "#ffffff",
-    "secondary": "#c7c7c7",
+    "secondary": "#3A98D3",
     "tertiary": "#404040",
-    "neutral": "#333333",
+    "neutral": "#D4D4D4",
     "success": "#008060",
     "warning": "#ffc453",
     "error": "#d82c0d",
@@ -30,7 +30,11 @@
     "fonts": [
       {
         "variations": [],
-        "family": "Albert Sans"
+        "family": "Roboto"
+      },
+      {
+        "variations": [],
+        "family": "Poppins"
       }
     ]
   },
