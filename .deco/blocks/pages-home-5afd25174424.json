@@ -409,10 +409,28 @@
         "title": "Especializações",
         "subtitle": "Domínio das melhores plataformas e tecnologias",
         "images": [
-          "https://assets.decocache.com/go-alfa/99513820-ad3b-4521-8b2c-a600a9bd7240/image-3.png",
-          "https://assets.decocache.com/go-alfa/c7fdac41-1caa-4eec-8b64-02e992e8b358/Group-19-(4).png",
+          "https://assets.decocache.com/go-alfa/8d3558d9-4242-43c7-a6e3-48969dd61274/Group-19.png",
+          "https://assets.decocache.com/go-alfa/a99698fa-de4a-49bc-9053-f0c7214bbca8/Group-19-(1).png",
           "https://assets.decocache.com/go-alfa/4bc71511-96a4-406b-bc8f-0958ed1f672d/Group-19-(2).png",
-          "https://assets.decocache.com/go-alfa/a99698fa-de4a-49bc-9053-f0c7214bbca8/Group-19-(1).png"
+          "https://assets.decocache.com/go-alfa/99513820-ad3b-4521-8b2c-a600a9bd7240/image-3.png",
+          "https://assets.decocache.com/go-alfa/c7fdac41-1caa-4eec-8b64-02e992e8b358/Group-19-(4).png"
+        ],
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Clients.tsx",
+        "title": "Clientes",
+        "subtitle": "Empresas que confiam na ALLFA",
+        "images": [
+          "https://assets.decocache.com/go-alfa/72727556-5d35-48bb-a6cc-6af2553fca0e/Group-11.png",
+          "https://assets.decocache.com/go-alfa/c1073b7b-3028-4072-bfb4-9d2ddb5951ef/abracasa.png",
+          "https://assets.decocache.com/go-alfa/7633afaf-b0b0-490e-be20-915d1a0a06f3/abracadabra.png",
+          "https://assets.decocache.com/go-alfa/d68db602-fee4-42c4-bb87-c324d76bb192/image-1.png",
+          "https://assets.decocache.com/go-alfa/34a7e407-f5f3-4462-b706-fdab0fc9e277/images-3.png"
         ],
         "width": 120,
         "height": 120
