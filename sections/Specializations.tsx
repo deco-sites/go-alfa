@@ -1,58 +1,39 @@
-import LogosRowSection, { ImageProps } from "site/sections/LogosRowSection.tsx";
-
-export interface Specialization {
-    /**
-     * @format rich-text
-     * @default Click here to tweak this text however you want.
-     */
-    title: string;
-    /**
-     * @default This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.
-     */
-    image: ImageProps[];
-    width?: number;
-}
+import TitleSection from "site/sections/TitleSection.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
+import CustomCarousel from "site/islands/CustomCarousel.tsx";
 
 export interface Props {
-    section: Specialization[];
+    title: string;
+    subtitle?: string;
+    description?: string;
+    images?: ImageWidget[];
+    width?: number;
+    height?: number;
 }
 
-const Specializations = ({ section }: Props) => {
+const Solutions = (
+    { title, subtitle, description, images, width, height }: Props,
+) => {
     return (
-        <div class=" bg-primary w-full">
+        <div
+            class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12"}
+        >
+            <TitleSection
+                title={title}
+                subtitle={subtitle}
+                description={description}
+            />
             <div
-                class={"flex flex-col items-center lg:container md:max-w-7xl lg:px-auto px-4 py-12"}
+                style={{
+                    maskImage:
+                        "linear-gradient(to right, transparent, black 20%, black 90%, transparent)",
+                }}
+                class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12  "}
             >
-                <div
-                    class={" w-full h-full space-y-16"}
-                >
-                    {section && (
-                        section.map((item, index) => (
-                            <div
-                                key={index}
-                                class={"flex flex-col items-center gap-6 w-full h-full"}
-                            >
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: item.title,
-                                    }}
-                                >
-                                </div>
-                                <div
-                                    class={"flex justify-center lg:justify-between flex-wrap items-center w-full gap-6 h-full"}
-                                >
-                                    <LogosRowSection
-                                        images={item.image}
-                                        width={item.width}
-                                    />
-                                </div>
-                            </div>
-                        ))
-                    )}
-                </div>
+                <CustomCarousel images={images} width={width} height={height} />
             </div>
         </div>
     );
 };
 
-export default Specializations;
+export default Solutions;

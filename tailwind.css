@@ -49,4 +49,8 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+
+  .paused {
+    animation-play-state: paused;
+  }
 }

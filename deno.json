@@ -43,6 +43,7 @@
     "gsap": "https://esm.sh/gsap@^3.12.2",
     "@gsap/react": "npm:@gsap/react@^2.1.2",
     "scrollTrigger": "https://esm.sh/gsap@3.12.2/ScrollTrigger",
+    "draggable": "https://esm.sh/gsap@3.12.2/Draggable",
     "lucide-preact": "npm:lucide-preact@^0.518.0"
   },
   "tasks": {
