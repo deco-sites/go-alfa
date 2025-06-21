@@ -2703,9 +2703,6 @@ html {
 .gap-1 {
   gap: 0.25rem;
 }
-.gap-10 {
-  gap: 2.5rem;
-}
 .gap-12 {
   gap: 3rem;
 }
@@ -2778,6 +2775,11 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -2874,16 +2876,12 @@ html {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
 .border-base-content {
   --tw-border-opacity: 1;
   border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
 }
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
+.border-primary\/5 {
+  border-color: var(--fallback-p,oklch(var(--p)/0.05));
 }
 .border-secondary {
   --tw-border-opacity: 1;
@@ -3238,6 +3236,9 @@ html {
 .text-primary\/50 {
   color: var(--fallback-p,oklch(var(--p)/0.5));
 }
+.text-primary\/60 {
+  color: var(--fallback-p,oklch(var(--p)/0.6));
+}
 .text-secondary {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
@@ -3473,6 +3474,13 @@ html {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.group[open] .group-open\:bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
+}
+.group[open] .group-open\:text-secondary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
+}
 @media (min-width: 640px) {
 
   .sm\:h-\[273px\] {
@@ -3586,6 +3594,11 @@ html {
     padding-right: 1rem;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -3639,12 +3652,12 @@ html {
     width: 50%;
   }
 
-  .lg\:w-2\/5 {
-    width: 40%;
-  }
-
   .lg\:max-w-\[520px\] {
     max-width: 520px;
+  }
+
+  .lg\:max-w-\[700px\] {
+    max-width: 700px;
   }
 
   .lg\:flex-1 {
@@ -3665,10 +3678,6 @@ html {
 
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:gap-20 {
-    gap: 5rem;
   }
 
   .lg\:px-16 {

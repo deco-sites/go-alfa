@@ -439,6 +439,27 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Faq.tsx",
+        "questions": [
+          {
+            "title": "teste 1",
+            "answer": "<p>tsssssssssssssssssssssssssss</p>",
+            "question": "testeeeeeee"
+          },
+          {
+            "question": "Qual o prazo de entrega?",
+            "answer": "<p>testeeeeeeeeeeeeee</p>"
+          },
+          {
+            "question": "Qual o melhor tipo de site para minha empresa/projeto?",
+            "answer": "<p>testeeeeeeeeeeeeeeeeee</p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Contact.tsx",
         "title": "Contato",
         "description": "Nossos clientes são importantes para nós. Ficaríamos contentes em receber o seu contato durante nosso horário comercial.",
