@@ -2656,6 +2656,9 @@ html {
 .animate-sliding {
   animation: sliding 30s linear infinite;
 }
+.cursor-grab {
+  cursor: grab;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -3020,6 +3023,10 @@ html {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3302,10 +3309,13 @@ html {
 .duration-300 {
   transition-duration: 300ms;
 }
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 /** Remove scrollbar from overflow-auto */
+@media (max-width: 1024px) {
+    .mask-mobile {
+      mask-image: linear-gradient(to right, transparent, black 20%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 90%, transparent);
+    }
+  }
 @media (min-width: 768px) {
 
   .md\:btn-sm {
@@ -3479,6 +3489,9 @@ html {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.active\:cursor-grabbing:active {
+  cursor: grabbing;
 }
 .group[open] .group-open\:rotate-180 {
   --tw-rotate: 180deg;

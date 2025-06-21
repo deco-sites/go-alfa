@@ -1,7 +1,9 @@
+// deno-lint-ignore-file no-explicit-any
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { gsap } from "gsap";
 import Draggable from "draggable";
 import { useLayoutEffect, useRef } from "preact/hooks";
+import { useIsMobile } from "site/hooks/use-mobile.ts";
 
 export interface Props {
     images?: ImageWidget[];
@@ -10,38 +12,29 @@ export interface Props {
 }
 
 const CustomCarousel = ({ images = [], width = 200, height = 100 }: Props) => {
+    const isMobile = useIsMobile();
+
     const duplicated = [...images, ...images];
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const tweenRef = useRef<gsap.core.Tween | null>(null);
+    const draggableInstance = useRef<any>(null);
 
     useLayoutEffect(() => {
-        gsap.registerPlugin(Draggable);
-
         const container = containerRef.current;
+
         if (!container) return;
+
+        if (!isMobile) {
+            gsap.set(container, { x: 0 });
+            return;
+        }
+
+        gsap.registerPlugin(Draggable);
 
         const maxScrollX = container.offsetWidth -
             container.parentElement!.offsetWidth;
 
-        const createTween = (xStart: number) => {
-            const tween = gsap.to(container, {
-                x: -maxScrollX,
-                duration: 20,
-                ease: "ease-in-out",
-                repeat: -1,
-                onStart() {
-                    gsap.set(container, { x: xStart });
-                },
-            });
-
-            tweenRef.current = tween;
-            return tween;
-        };
-
-        let tween = createTween(0);
-
-        Draggable.create(container, {
+        draggableInstance.current = Draggable.create(container, {
             type: "x",
             edgeResistance: 0.65,
             inertia: true,
@@ -49,55 +42,61 @@ const CustomCarousel = ({ images = [], width = 200, height = 100 }: Props) => {
                 minX: -maxScrollX,
                 maxX: 0,
             },
-            onPress() {
-                tween.pause();
-            },
-            onRelease() {
-                const currentX = gsap.getProperty(container, "x") as number;
-                tween.kill();
-                tween = createTween(currentX);
-            },
+            cursor: "grab",
+            activeCursor: "grabbing",
         });
 
         return () => {
-            tween.kill();
+            if (draggableInstance.current) {
+                draggableInstance.current.forEach((d: any) => d.kill());
+                draggableInstance.current = null;
+            }
             gsap.killTweensOf(container);
         };
-    }, []);
+    }, [isMobile]);
 
-    const handleMouseEnter = () => {
-        tweenRef.current?.pause();
-    };
-
-    const handleMouseLeave = () => {
-        tweenRef.current?.play();
-    };
-
-    return (
-        <div
-            class={"overflow-hidden"}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            <div
-                ref={containerRef}
-                class="flex w-max gap-24 select-none"
-            >
-                {duplicated.map((image, index) => (
-                    <img
-                        key={index}
-                        loading="lazy"
-                        src={image}
-                        alt=""
-                        width={width}
-                        height={height}
-                        class="object-contain flex-shrink-0 filter grayscale hover:filter-none transition duration-300"
-                        aria-hidden="true"
-                    />
-                ))}
+    if (isMobile) {
+        return (
+            <div class="overflow-hidden">
+                <div
+                    ref={containerRef}
+                    class="flex w-max gap-24 select-none cursor-grab active:cursor-grabbing"
+                    style={{ touchAction: "pan-y" }}
+                >
+                    {duplicated.map((image, index) => (
+                        <img
+                            key={index}
+                            loading="lazy"
+                            src={image}
+                            alt=""
+                            width={width}
+                            height={height}
+                            class="object-contain flex-shrink-0 filter grayscale hover:filter-none transition duration-300"
+                            aria-hidden="true"
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return (
+            <div class="overflow-hidden">
+                <div class="flex justify-between w-full gap-24 select-none px-2">
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            loading="lazy"
+                            src={image}
+                            alt=""
+                            width={width}
+                            height={height}
+                            class="object-contain flex-shrink-0 filter cursor-pointer grayscale hover:filter-none transition duration-300"
+                        />
+                    ))}
+                </div>
+            </div>
+        );
+    }
 };
 
 export default CustomCarousel;

@@ -50,7 +50,12 @@
     display: none;
   }
 
-  .paused {
-    animation-play-state: paused;
+   @media (max-width: 1024px) {
+    .mask-mobile {
+      mask-image: linear-gradient(to right, transparent, black 20%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 90%, transparent);
+    }
   }
+
+
 }

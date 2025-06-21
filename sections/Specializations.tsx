@@ -24,11 +24,7 @@ const Solutions = (
                 description={description}
             />
             <div
-                style={{
-                    maskImage:
-                        "linear-gradient(to right, transparent, black 20%, black 90%, transparent)",
-                }}
-                class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12  "}
+                class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12 mask-mobile"}
             >
                 <CustomCarousel images={images} width={width} height={height} />
             </div>
