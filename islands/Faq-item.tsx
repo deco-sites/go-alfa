@@ -13,7 +13,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
                 <span class="flex-auto text-xl font-medium group-open:text-secondary transition-colors duration-400">
                     {question}
                 </span>
-                <span class="flex-none transition-all duration-300 group-open:rotate-180 bg-secondary group-open:bg-white/5 rounded-full p-2">
+                <span class="flex-none transition-all duration-300 group-open:rotate-180 max-h-[32px] bg-secondary group-open:bg-white/5 rounded-full p-2">
                     <CustomIcon name="chevronDown" color="#fff" size={16} />
                 </span>
             </summary>

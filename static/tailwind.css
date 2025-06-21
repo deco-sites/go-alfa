@@ -2459,6 +2459,9 @@ html {
 .max-h-\[300px\] {
   max-height: 300px;
 }
+.max-h-\[32px\] {
+  max-height: 32px;
+}
 .max-h-\[55px\] {
   max-height: 55px;
 }
