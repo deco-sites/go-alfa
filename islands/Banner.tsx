@@ -93,7 +93,7 @@ const Banner = ({
                     backgroundImage: `url(${image ? image : ""})`,
                     backgroundSize: `${size}`,
                 }}
-                class="flex flex-col relative items-center gap-8 h-full bg-[position:80%_center]  md:bg-top  before:bg-[#0E0F14] transition-all duration-300 before:opacity-65 before:md:opacity-45 before:absolute before:inset-0 before:z-0"
+                class="flex flex-col relative bg-fixed items-center gap-8 h-full bg-[position:80%_center]  md:bg-top  before:bg-[#0E0F14] transition-all duration-300 before:opacity-65 before:md:opacity-45 before:absolute before:inset-0 before:z-0"
             >
                 <div class="w-full pl-0 md:pl-10 h-full z-10 flex  items-center ">
                     <div class=" flex max-w-[890px] flex-col gap-7 px-4">

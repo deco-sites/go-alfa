@@ -2976,6 +2976,9 @@ html {
 .bg-cover {
   background-size: cover;
 }
+.bg-fixed {
+  background-attachment: fixed;
+}
 .bg-\[position\:80\%_center\] {
   background-position: 80% center;
 }
