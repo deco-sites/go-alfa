@@ -2441,9 +2441,6 @@ html {
 .h-\[210px\] {
   height: 210px;
 }
-.h-\[80px\] {
-  height: 80px;
-}
 .h-\[820px\] {
   height: 820px;
 }
@@ -2501,9 +2498,6 @@ html {
 }
 .w-\[316px\] {
   width: 316px;
-}
-.w-\[320px\] {
-  width: 320px;
 }
 .w-\[330px\] {
   width: 330px;
@@ -2661,9 +2655,6 @@ html {
 }
 .animate-sliding {
   animation: sliding 30s linear infinite;
-}
-.cursor-default {
-  cursor: default;
 }
 .cursor-pointer {
   cursor: pointer;

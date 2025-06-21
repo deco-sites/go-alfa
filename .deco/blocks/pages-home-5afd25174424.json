@@ -46,6 +46,20 @@
               "top": true,
               "bottom": true
             }
+          },
+          {
+            "titlePlacement": "left",
+            "descriptionPlacement": "left",
+            "placement": "right",
+            "cta": [],
+            "ctaPlacement": "left",
+            "tagline": "teste 2",
+            "image": "https://assets.decocache.com/go-alfa/fd3ec99f-f4b9-4e4e-adb8-deb190955ee9/image-allfa.png",
+            "description": "<p><span style=\"font-size: 12pt\">Na </span><strong><span style=\"color: rgb(61, 152, 209); font-size: 12pt\">ALLFA</span></strong><span style=\"font-size: 12pt\">, somos movidos por um propósito: criar soluções digitais que realmente mexem com os ponteiros do seu negócio. Atuamos na construção e evolução de produtos digitais, com foco especial em e-commerces, combinando estratégia, design, tecnologia e performance.<br>Somos uma equipe multidisciplinar apaixonada por resolver problemas complexos por meio da tecnologia. Trabalhamos com uma abordagem ágil e personalizada, buscando constantemente inovação e entrega de valor real para nossos clientes.</span><br><br><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Nossa atuação envolve:</span></p><p><br></p><ul><li><p><strong>Entendimento profundo do seu negócio</strong></p></li><li><p><strong>Planejamento estratégico digital</strong></p></li><li><p><strong>Design centrado no usuário (UX/UI)</strong></p></li><li><p><strong>Desenvolvimento sob medida</strong></p></li><li><p><strong>Otimização contínua</strong></p></li></ul>",
+            "disableSpacing": {
+              "top": true,
+              "bottom": true
+            }
           }
         ],
         "title": "Sobre nós",

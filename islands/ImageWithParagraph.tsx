@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+import ScrollTrigger from "scrollTrigger";
+import { useLayoutEffect, useRef } from "preact/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
@@ -22,6 +25,7 @@ export interface ImageWithParagraphProps {
   placement?: "left" | "right";
   cta?: CTA[];
   ctaPlacement?: "left" | "right" | "center";
+  index?: number;
 }
 
 const PLACEMENT = {
@@ -44,18 +48,65 @@ export default function ImageWithParagraph({
   descriptionPlacement = "left",
   image = DEFAULT_IMAGE,
   placement = "left",
+  index = 1,
   cta = [
     { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
     { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
   ],
   ctaPlacement = "left",
 }: ImageWithParagraphProps) {
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const el = elementRef.current;
+
+    if (!el) return;
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          end: "bottom 60%",
+          scrub: false,
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      tl.fromTo(
+        "#image",
+        { opacity: 0, x: 70 },
+        { opacity: 1, x: 0, duration: 0.8 + index },
+        `-=0.2${index}`,
+      )
+        .fromTo(
+          "#description",
+          { opacity: 0, x: -40 },
+          { opacity: 1, x: 0, duration: 0.8 + index },
+          `-=0.2${index}`,
+        )
+        .fromTo(
+          "#cta",
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.8 + index },
+          `-=0.2${index}`,
+        );
+    }, el);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div class="lg:container md:max-w-7xl lg:mx-auto mx-4 text-sm  ">
+    <div
+      ref={elementRef}
+      class="lg:container md:max-w-7xl lg:mx-auto mx-4 text-sm"
+    >
       <div
         class={`flex ${PLACEMENT[placement]} gap-12 md:gap-14 text-left  z-10`}
       >
-        <div class="w-full md:w-1/2 h-full ">
+        <div id={"image"} class="w-full md:w-1/2 h-full">
           <Image
             width={800}
             class="object-cover z-10 "
@@ -68,6 +119,7 @@ export default function ImageWithParagraph({
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-between md:space-y-4 md:max-w-xl  z-10">
           <div
+            id={"description"}
             style={`text-align:${descriptionPlacement}`}
             class="inline-block font-light"
             dangerouslySetInnerHTML={{
@@ -76,6 +128,7 @@ export default function ImageWithParagraph({
           />
           {cta && (
             <div
+              id={"cta"}
               class={`flex gap-3 pt-4  justify-${CTA_PLACEMENT[ctaPlacement]}`}
             >
               {cta.map((item) => (

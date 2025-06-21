@@ -1,6 +1,6 @@
 import ImageWithParagraph, {
     ImageWithParagraphProps,
-} from "site/sections/ImageWithParagraph.tsx";
+} from "../islands/ImageWithParagraph.tsx";
 import TitleSection from "../islands/TitleSection.tsx";
 
 export interface Props {
@@ -11,12 +11,13 @@ export interface Props {
 
 const About = ({ title, subtitle, imageWithParagraph }: Props) => {
     return (
-        <div class={"flex flex-col items-center md:px-4 p-0 overflow-x-hidden"}>
+        <div class={"flex flex-col items-center md:px-4 p-0 overflow-hidden"}>
             <TitleSection title={title} subtitle={subtitle} />
-            <div class={"w-full h-full"}>
+            <div class={"w-full h-full space-y-8"}>
                 {imageWithParagraph?.map((item, index) => (
                     <ImageWithParagraph
                         key={index}
+                        index={index}
                         description={item.description}
                         image={item.image}
                         placement={item.placement}
