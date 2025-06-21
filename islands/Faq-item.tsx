@@ -8,7 +8,7 @@ export interface FaqItemProps {
 
 const FaqItem = ({ question, answer }: FaqItemProps) => {
     return (
-        <details class="group border-b border-primary/5">
+        <details class="faq-item group border-b border-primary/5">
             <summary class="text-lg cursor-pointer py-6 flex">
                 <span class="flex-auto text-xl font-medium group-open:text-secondary transition-colors duration-400">
                     {question}

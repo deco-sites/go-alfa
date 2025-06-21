@@ -6,10 +6,10 @@ import * as $_app from "./routes/_app.tsx";
 import * as $Banner from "./islands/Banner.tsx";
 import * as $CustomCarousel from "./islands/CustomCarousel.tsx";
 import * as $Faq_item from "./islands/Faq-item.tsx";
+import * as $FaqList from "./islands/FaqList.tsx";
 import * as $HoursOfOperation from "./islands/HoursOfOperation.tsx";
 import * as $ImageWithParagraph from "./islands/ImageWithParagraph.tsx";
 import * as $SolutionsList from "./islands/SolutionsList.tsx";
-import * as $Teste from "./islands/Teste.tsx";
 import * as $TitleSection from "./islands/TitleSection.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -21,10 +21,10 @@ const manifest = {
     "./islands/Banner.tsx": $Banner,
     "./islands/CustomCarousel.tsx": $CustomCarousel,
     "./islands/Faq-item.tsx": $Faq_item,
+    "./islands/FaqList.tsx": $FaqList,
     "./islands/HoursOfOperation.tsx": $HoursOfOperation,
     "./islands/ImageWithParagraph.tsx": $ImageWithParagraph,
     "./islands/SolutionsList.tsx": $SolutionsList,
-    "./islands/Teste.tsx": $Teste,
     "./islands/TitleSection.tsx": $TitleSection,
   },
   baseUrl: import.meta.url,

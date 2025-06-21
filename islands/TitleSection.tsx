@@ -7,6 +7,7 @@ export interface Props {
     subtitle?: string;
     description?: string;
     className?: string;
+    id?: string;
 }
 
 const TitleSection = ({ title, subtitle, description, className }: Props) => {
@@ -31,18 +32,18 @@ const TitleSection = ({ title, subtitle, description, className }: Props) => {
             });
 
             tl.fromTo(
-                "#title",
+                `.title`,
                 { opacity: 0, y: 40 },
-                { opacity: 1, y: 0, duration: 0.6 },
+                { opacity: 1, y: 0, duration: 0.8 },
             )
                 .fromTo(
-                    "#subtitle",
+                    ".subtitle",
                     { opacity: 0, y: 40 },
                     { opacity: 1, y: 0, duration: 0.6 },
                     "-=0.4",
                 )
                 .fromTo(
-                    "#description",
+                    ".description",
                     { opacity: 0, x: 20 },
                     { opacity: 1, x: 0, duration: 0.6 },
                     "-=0.4",
@@ -60,24 +61,17 @@ const TitleSection = ({ title, subtitle, description, className }: Props) => {
             }`}
         >
             <h1
-                id="title"
-                class={`text-center relative w-fit text-base text-secondary font-medium 
+                class={`title text-center relative w-fit text-base text-secondary font-medium 
           before:content-[""] before:absolute before:w-[34px] before:h-[1px] before:from-secondary before:-left-12 before:top-[50%] before:bg-gradient-to-l before:via-[#1B4560] before:to-base
           after:content-[""] after:absolute after:w-[34px] after:h-[1px] after:from-secondary after:-right-12 after:top-[50%] after:bg-gradient-to-r after:via-[#1B4560] after:to-base
           ${className ?? ""}`}
             >
                 {title}
             </h1>
-            <h3
-                id="subtitle"
-                class="text-2xl md:text-3xl font-medium text-center text-primary"
-            >
+            <h3 class="subtitle text-2xl md:text-3xl font-medium text-center text-primary">
                 {subtitle}
             </h3>
-            <p
-                id="description"
-                class="text-center text-primary/50 font-light"
-            >
+            <p class="description text-center text-primary/50 font-light">
                 {description}
             </p>
         </div>

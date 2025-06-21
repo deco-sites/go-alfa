@@ -1,6 +1,6 @@
-import FaqItem from "site/islands/Faq-item.tsx";
 import { FaqItemProps } from "site/islands/Faq-item.tsx";
 import TitleSection from "../islands/TitleSection.tsx";
+import FaqList from "site/islands/FaqList.tsx";
 
 export interface Props {
   title?: string;
@@ -38,15 +38,7 @@ export default function BlogPosts({
         subtitle={subTitle}
         description={description}
       />
-      <div class=" lg:max-w-[700px] w-full space-y-8">
-        {questions?.map((question, i) => (
-          <FaqItem
-            key={i}
-            question={question.question}
-            answer={question.answer}
-          />
-        ))}
-      </div>
+      <FaqList faq={questions} />
     </div>
   );
 }
