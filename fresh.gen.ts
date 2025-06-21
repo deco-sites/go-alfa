@@ -4,6 +4,7 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $Banner from "./islands/Banner.tsx";
+import * as $ContactSection from "./islands/ContactSection.tsx";
 import * as $CustomCarousel from "./islands/CustomCarousel.tsx";
 import * as $Faq_item from "./islands/Faq-item.tsx";
 import * as $FaqList from "./islands/FaqList.tsx";
@@ -19,6 +20,7 @@ const manifest = {
   },
   islands: {
     "./islands/Banner.tsx": $Banner,
+    "./islands/ContactSection.tsx": $ContactSection,
     "./islands/CustomCarousel.tsx": $CustomCarousel,
     "./islands/Faq-item.tsx": $Faq_item,
     "./islands/FaqList.tsx": $FaqList,

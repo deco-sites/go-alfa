@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks";
 import { DaysOfWeek } from "site/sections/Contact.tsx";
 import Icon from "site/components/ui/Icon.tsx";
+import CustomIcon from "site/components/ui/lucide-icon.tsx";
 
 export interface Props {
     daysOfWeek: DaysOfWeek[];
@@ -59,10 +60,9 @@ const HoursOfOperation = ({ daysOfWeek, startTime, endTime }: Props) => {
                                 </>
                             )}
                         <button onClick={() => setOpen(!open)}>
-                            <Icon
-                                id="ChevronDown"
+                            <CustomIcon
+                                name="ChevronDown"
                                 size={16}
-                                strokeWidth={0.1}
                             />
                         </button>
                     </div>
@@ -90,10 +90,9 @@ const HoursOfOperation = ({ daysOfWeek, startTime, endTime }: Props) => {
                                     )}
                                 {index === 0 && (
                                     <button onClick={() => setOpen(!open)}>
-                                        <Icon
-                                            id="ChevronUp"
+                                        <CustomIcon
+                                            name="ChevronUp"
                                             size={16}
-                                            strokeWidth={0.1}
                                         />
                                     </button>
                                 )}
