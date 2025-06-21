@@ -41,7 +41,9 @@ const HoursOfOperation = ({ daysOfWeek, startTime, endTime }: Props) => {
         <div>
             {!open
                 ? (
-                    <div class={"flex items-center gap-2 cursor-pointer"}>
+                    <div
+                        class={"flex items-center gap-2 cursor-pointer transition-all duration-300"}
+                    >
                         {isOperating
                             ? (
                                 <>
@@ -54,9 +56,6 @@ const HoursOfOperation = ({ daysOfWeek, startTime, endTime }: Props) => {
                             : (
                                 <>
                                     <p>Fechado Hoje</p>
-                                    <span class={"text-primary font-bold"}>
-                                        {`${startTime} - ${endTime}`}
-                                    </span>
                                 </>
                             )}
                         <button onClick={() => setOpen(!open)}>
@@ -75,15 +74,20 @@ const HoursOfOperation = ({ daysOfWeek, startTime, endTime }: Props) => {
                                 <p
                                     class={`${
                                         day.dayOfWeek === dayOfWeek
-                                            ? "text-primary"
+                                            ? "text-secondary"
                                             : ""
                                     }`}
                                 >
                                     {day.dayOfWeek.slice(0, 3) + "."}
                                 </p>
-                                <span class={"text-primary font-bold "}>
-                                    {`${startTime} - ${endTime}`}
-                                </span>
+                                {day.dayOfWeek === "Domingo" ||
+                                        day.dayOfWeek === "Sábado"
+                                    ? <p>Fechado</p>
+                                    : (
+                                        <p>
+                                            {startTime} - {endTime}
+                                        </p>
+                                    )}
                                 {index === 0 && (
                                     <button onClick={() => setOpen(!open)}>
                                         <Icon

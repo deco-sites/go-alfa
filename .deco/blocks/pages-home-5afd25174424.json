@@ -468,7 +468,8 @@
         "image": "https://assets.decocache.com/go-alfa/927bd8d3-31e6-4a8e-9dd6-cba27ab4adb2/contact.jpg",
         "whatsapp": {
           "text": "Envie sua mensagem",
-          "href": "https://wa.me/5521981026507"
+          "href": "https://wa.me/5521981026507",
+          "outline": false
         },
         "daysOfWeek": [
           {
@@ -491,6 +492,19 @@
           },
           {
             "dayOfWeek": "Domingo"
+          }
+        ],
+        "subtitle": "<p><span>Vamos conversar sobre seus próximos projetos ?</span></p>",
+        "cta": [
+          {
+            "icon": "WhatsApp",
+            "href": "https://wa.me/5511999998888"
+          },
+          {
+            "icon": "Email",
+            "href": "mailto:comercial@go-allfa.com",
+            "text": "comercial@go-allfa.com",
+            "outline": true
           }
         ]
       }

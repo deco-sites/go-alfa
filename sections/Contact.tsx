@@ -1,7 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TitleSection from "site/sections/TitleSection.tsx";
-import Icon from "site/components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import HoursOfOperation from "site/islands/HoursOfOperation.tsx";
 
 export interface DaysOfWeek {
@@ -10,17 +10,19 @@ export interface DaysOfWeek {
 
 export interface CTA {
     href: string;
-    text: string;
+    text?: string;
     outline?: boolean;
+    icon: AvailableIcons;
 }
 
 export interface Props {
     title: string;
+    /** @format rich-text */
+    subtitle: string;
     description: string;
     image?: ImageWidget;
-    email: string;
     placement?: "left" | "right";
-    whatsapp?: CTA;
+    cta: CTA[];
     daysOfWeek?: DaysOfWeek[];
     startTime?: string;
     endTime?: string;
@@ -60,10 +62,10 @@ const DEFAULT_DAYS_OF_WEEK: DaysOfWeek[] = [
 
 const Contact = (
     {
-        title,
+        title = "Contato",
+        subtitle = "Vamos conversar sobre seus próximos projetos ?",
         description,
-        email,
-        whatsapp,
+        cta,
         placement = "left",
         image = DEFAULT_IMAGE,
         daysOfWeek = DEFAULT_DAYS_OF_WEEK,
@@ -76,11 +78,11 @@ const Contact = (
             id={"contact"}
             class={"lg:container md:max-w-7xl lg:px-auto px-4 pb-12 "}
         >
-            <TitleSection>{title}</TitleSection>
+            <TitleSection title={title} />
             <div
-                class={`flex ${PLACEMENT[placement]} w-full   gap-12 `}
+                class={`flex ${PLACEMENT[placement]} w-full  gap-12 `}
             >
-                <div class="w-full   overflow-hidden">
+                <div class="w-full overflow-hidden">
                     <Image
                         width={800}
                         class="object-cover z-10 "
@@ -92,34 +94,36 @@ const Contact = (
                     />
                 </div>
                 <div
-                    class={"flex flex-col gap-4 lg:max-w-[520px] justify-between"}
+                    class={"flex flex-auto lg:min-w-[600px] flex-col gap-4 "}
                 >
+                    <h2
+                        class="text-2xl md:text-4xl font-bold text-secondary"
+                        dangerouslySetInnerHTML={{ __html: subtitle }}
+                    />
                     <h3>{description}</h3>
-                    {whatsapp && (
-                        <a
-                            href={whatsapp.href}
-                            target={whatsapp?.href.includes("http")
-                                ? "_blank"
-                                : "_self"}
-                            rel="noopener noreferrer"
-                            class={`font-bold btn px-10  btn-primary text-base w-full md:w-fit flex items-center gap-2 ${
-                                whatsapp.outline && "btn-outline"
-                            }`}
-                        >
-                            <Icon id="WhatsApp" size={24} strokeWidth={0.1} />
-                            {whatsapp.text}
-                        </a>
-                    )}
-                    <div class={"flex flex-col gap-6"}>
-                        <h5 class={"text-primary text-2xl"}>Allfa</h5>
-                        <a
-                            href={`mailto:${email}`}
-                            class={"hover:text-primary transition-colors duration-300"}
-                        >
-                            {email}
-                        </a>
+                    <div class={"flex gap-4 flex-wrap"}>
+                        {cta.map(({ href, text, outline, icon }) => (
+                            <a
+                                href={href}
+                                target={href.includes("http")
+                                    ? "_blank"
+                                    : "_self"}
+                                rel="noopener noreferrer"
+                                class={`font-bold btn  btn-primary text-base w-full md:w-fit flex items-center gap-2 ${
+                                    text && "px-10"
+                                } ${
+                                    outline &&
+                                    "btn-outline rounded-md font-medium border-white/[0.06] "
+                                }`}
+                            >
+                                <Icon id={icon} size={16} strokeWidth={0.1} />
+                                {text && text}
+                            </a>
+                        ))}
                     </div>
-                    <div class={"space-y-6"}>
+                    <div
+                        class={"space-y-6 mt-auto"}
+                    >
                         <h5 class={"text-primary text-2xl"}>Horas</h5>
                         <HoursOfOperation
                             daysOfWeek={daysOfWeek}

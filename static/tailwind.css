@@ -2393,6 +2393,9 @@ html {
 .mt-\[5px\] {
   margin-top: 5px;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -2895,6 +2898,9 @@ html {
 }
 .border-white\/5 {
   border-color: rgb(255 255 255 / 0.05);
+}
+.border-white\/\[0\.06\] {
+  border-color: rgb(255 255 255 / 0.06);
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -3462,10 +3468,6 @@ html {
 .hover\:bg-white\/10:hover {
   background-color: rgb(255 255 255 / 0.1);
 }
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
-}
 .hover\:filter-none:hover {
   filter: none;
 }
@@ -3616,6 +3618,11 @@ html {
     line-height: 2.25rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3655,8 +3662,8 @@ html {
     width: 50%;
   }
 
-  .lg\:max-w-\[520px\] {
-    max-width: 520px;
+  .lg\:min-w-\[600px\] {
+    min-width: 600px;
   }
 
   .lg\:max-w-\[700px\] {
