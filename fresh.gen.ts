@@ -8,6 +8,7 @@ import * as $CustomCarousel from "./islands/CustomCarousel.tsx";
 import * as $Faq_item from "./islands/Faq-item.tsx";
 import * as $HoursOfOperation from "./islands/HoursOfOperation.tsx";
 import * as $Teste from "./islands/Teste.tsx";
+import * as $TitleSection from "./islands/TitleSection.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -20,6 +21,7 @@ const manifest = {
     "./islands/Faq-item.tsx": $Faq_item,
     "./islands/HoursOfOperation.tsx": $HoursOfOperation,
     "./islands/Teste.tsx": $Teste,
+    "./islands/TitleSection.tsx": $TitleSection,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

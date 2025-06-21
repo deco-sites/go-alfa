@@ -1,6 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import TitleSection from "site/sections/TitleSection.tsx";
+import TitleSection from "../islands/TitleSection.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import HoursOfOperation from "site/islands/HoursOfOperation.tsx";
 

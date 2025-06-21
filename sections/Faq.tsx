@@ -1,6 +1,6 @@
 import FaqItem from "site/islands/Faq-item.tsx";
 import { FaqItemProps } from "site/islands/Faq-item.tsx";
-import TitleSection from "site/sections/TitleSection.tsx";
+import TitleSection from "../islands/TitleSection.tsx";
 
 export interface Props {
   title?: string;
@@ -32,7 +32,7 @@ export default function BlogPosts({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28 flex flex-col items-center">
+    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28 flex flex-col items-center overflow-hidden">
       <TitleSection
         title={title}
         subtitle={subTitle}

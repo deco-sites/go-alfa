@@ -1,4 +1,4 @@
-import TitleSection from "site/sections/TitleSection.tsx";
+import TitleSection from "../islands/TitleSection.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import CustomCarousel from "site/islands/CustomCarousel.tsx";
 
@@ -16,7 +16,7 @@ const Clients = (
 ) => {
     return (
         <div
-            class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12"}
+            class={"lg:container md:max-w-7xl lg:mx-auto mx-0 md:mx-4 pb-12 overflow-x-hidden"}
         >
             <TitleSection
                 title={title}
