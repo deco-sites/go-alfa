@@ -12,7 +12,7 @@ export default function HeroFlats({
   ],
 }: BannerProps) {
   return (
-    <nav class="h-[820px] relative ">
+    <nav class="h-screen md:h-[820px] relative ">
       <Banner
         cta={cta}
         description={description}

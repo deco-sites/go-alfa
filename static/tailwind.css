@@ -458,8 +458,9 @@ html {
 }
 
   /* Allow changing font family via CMS */
-  html {
+  html, body {
     font-family: var(--font-family);
+    overflow-x: hidden !important;
   }
 
   /** Remove default styles from input[type=number] */
@@ -2441,14 +2442,14 @@ html {
 .h-\[210px\] {
   height: 210px;
 }
-.h-\[820px\] {
-  height: 820px;
-}
 .h-full {
   height: 100%;
 }
 .h-px {
   height: 1px;
+}
+.h-screen {
+  height: 100vh;
 }
 .max-h-\[215px\] {
   max-height: 215px;
@@ -3536,6 +3537,10 @@ html {
   .md\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .md\:h-\[820px\] {
+    height: 820px;
   }
 
   .md\:max-h-\[300px\] {
