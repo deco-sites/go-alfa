@@ -129,7 +129,7 @@ const Banner = ({
                                 {description}
                             </p>
                             <div
-                                class=" gap-3  h-10 w-full text-3xl"
+                                class="  h-10 w-full flex items-center flex-wrap gap-4"
                                 ref={ctaRef}
                             >
                                 {cta?.map((item) => (
@@ -141,8 +141,10 @@ const Banner = ({
                                             ? "_blank"
                                             : "_self"}
                                         rel="noopener noreferrer"
-                                        class={`font-bold btn px-10  btn-primary flex md:max-w-[280px] w-full items-center text-sm bg-gradient-to-b from-white via-slate-100 to-slate-300 ${
-                                            item.outline && "btn-outline"
+                                        class={` btn px-10 font-normal  btn-primary flex md:max-w-[280px] w-full items-center text-sm  ${
+                                            item.outline
+                                                ? "btn-outline"
+                                                : "bg-gradient-to-b from-white via-slate-100 to-slate-300"
                                         }`}
                                     >
                                         {item?.icon && (

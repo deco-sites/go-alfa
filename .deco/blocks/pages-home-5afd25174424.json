@@ -17,10 +17,16 @@
       "title": "Inove seu e-commerce Movimente resultados reais.",
       "cta": [
         {
-          "text": "Fale com um especialista",
+          "text": "Solicitar orçamento",
           "outline": false,
           "href": "#contact",
-          "icon": "WhatsApp"
+          "icon": "Email"
+        },
+        {
+          "icon": "WhatsApp",
+          "href": "https://wa.me/5521981026507?text=Olá%2C%20tenho%20interesse%20nos%20serviços%20da%20empresa%20Allfa.",
+          "text": "Whatsapp",
+          "outline": true
         }
       ],
       "description": "Nossa expertise em tecnologia e estratégia transforma seu negócio digital, impulsionando crescimento, engajamento e sucesso sustentável.",
@@ -498,7 +504,7 @@
         "cta": [
           {
             "icon": "WhatsApp",
-            "href": "https://wa.me/5511999998888"
+            "href": "https://wa.me/5521981026507"
           },
           {
             "icon": "Email",
