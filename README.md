@@ -31,20 +31,5 @@ Keep your dependencies updated by running:
 deno task update
 ```
 
-## Help
 
-- 📚 [Docs](https://www.deco.cx/docs/en/overview)
 
-- 🚨 [Troubleshooting](https://deco.cx/docs/en/reference/troubleshooting)
-
-- 🔤 [Glossary](https://deco.cx/glossary)
-
-- 👥 [Discord](https://deco.cx/discord)
-
-## Contributing
-
-We are working on the instructions; feel free to contribute to this project now.
-
-Take a look at these other repositories:
-- [deco](https://github.com/deco-cx/deco/)
-- [apps](https://github.com/deco-cx/apps/)
