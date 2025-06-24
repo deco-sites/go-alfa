@@ -448,17 +448,17 @@
         "__resolveType": "site/sections/Faq.tsx",
         "questions": [
           {
-            "title": "teste 1",
-            "answer": "<p>tsssssssssssssssssssssssssss</p>",
-            "question": "testeeeeeee"
-          },
-          {
-            "question": "Qual o prazo de entrega?",
-            "answer": "<p>testeeeeeeeeeeeeee</p>"
+            "answer": "<p><span style=\"color: rgb(168, 162, 158); font-size: 14px\">O prazo de entrega depende da complexidade e do escopo do projeto. Após a análise inicial, é fornecido um cronograma detalhado com as etapas do desenvolvimento.</span></p>",
+            "question": "Qual o prazo de entrega?"
           },
           {
             "question": "Qual o melhor tipo de site para minha empresa/projeto?",
-            "answer": "<p>testeeeeeeeeeeeeeeeeee</p>"
+            "answer": "<p><span style=\"color: rgb(168, 162, 158); font-size: 14px\">O tipo ideal de site depende dos seus objetivos e público-alvo. Podemos conversar para entender suas necessidades e recomendar a solução mais adequada, como sites institucionais, lojas virtuais ou sistemas personalizados.</span></p>",
+            "title": "teste 1"
+          },
+          {
+            "question": "Que segurança eu tenho ao contratar vocês?",
+            "answer": "<p><span style=\"color: rgb(168, 162, 158); font-size: 14px\">Trabalho com contratos claros e bem definidos. Além disso, utilizo boas práticas de desenvolvimento e tecnologias seguras para proteger os dados e garantir a qualidade do projeto.</span></p>"
           }
         ]
       }
